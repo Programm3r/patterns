@@ -1,2 +1,2 @@
-# patterns
+# Patterns
 Any C# architectural patterns
