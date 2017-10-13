@@ -4,6 +4,8 @@
     {
         int HitPoints { get; }
 
+        int Attack { get; }
+
         UnitType Type { get; }
     }
 }
