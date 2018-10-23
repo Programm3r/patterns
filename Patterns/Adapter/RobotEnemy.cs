@@ -1,33 +1,29 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
     public class RobotEnemy
     {
 
-        private Random generator = new Random();
+        private readonly Random _generator = new Random();
 
         public void HitOpponent()
         {
-            int damage = generator.Next(10) + 1;
+            var damage = _generator.Next(10) + 1;
 
-            Console.WriteLine("Enemy robot causes " + damage.ToString() + " to opponent.");
+            Console.WriteLine("Enemy robot causes " + damage + " to opponent.");
         }
 
-        public void walkForward()
+        public void WalkForward()
         {
-            int walk = generator.Next(10) + 1;
+            var walk = _generator.Next(10) + 1;
 
-            Console.WriteLine("Enemy robot walks " + walk.ToString() + " spaces.");
+            Console.WriteLine("Enemy robot walks " + walk + " spaces.");
         }
 
-        public void ReactToHuman(string Name)
+        public void ReactToHuman(string name)
         {
-            Console.WriteLine("Robot Enemy Tromples " + Name);
+            Console.WriteLine("Robot Enemy Tromples " + name);
         }
 
     }

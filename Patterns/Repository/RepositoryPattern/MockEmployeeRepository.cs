@@ -17,7 +17,7 @@ namespace RepositoryPattern
 
         public Employee GetById(Guid id)
         {
-            Employee result = _employees.SingleOrDefault(e => e.Id == id);
+            var result = _employees.SingleOrDefault(e => e.Id == id);
 
             if (result == null)
             {
@@ -29,7 +29,7 @@ namespace RepositoryPattern
 
         public IEnumerable<Employee> GetAll()
         {
-            List<Employee> result = _employees.Select(e => new Employee(e)).ToList();
+            var result = _employees.Select(e => new Employee(e)).ToList();
             return result;
         }
 
@@ -48,7 +48,7 @@ namespace RepositoryPattern
                 throw new ArgumentNullException(nameof(entity));
             }
 
-            Employee entityToChange = _employees.SingleOrDefault(e => e.Id == entity.Id);
+            var entityToChange = _employees.SingleOrDefault(e => e.Id == entity.Id);
 
             if (entityToChange == null)
             {
@@ -58,7 +58,7 @@ namespace RepositoryPattern
             UpdateEntity(entity, entityToChange);
         }
 
-        private void UpdateEntity(Employee entity, Employee entityToChange)
+        private static void UpdateEntity(Employee entity, Employee entityToChange)
         {
             entityToChange.FirstName = entity.FirstName;
             entityToChange.Surname = entity.Surname;

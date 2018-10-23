@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AdapterPattern
+﻿namespace AdapterPattern
 {
     public class EnemyRobotAdapter : IEnemy
     {
-        RobotEnemy robot;
+        readonly RobotEnemy robot;
 
         public EnemyRobotAdapter(RobotEnemy Robot)
         {
@@ -27,7 +21,7 @@ namespace AdapterPattern
 
         public void moveForward()
         {
-            robot.walkForward();
+            robot.WalkForward();
         }
     }
 }

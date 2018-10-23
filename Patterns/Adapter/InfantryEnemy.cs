@@ -1,30 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
     public class InfantryEnemy : IEnemy
     {
-        private Random generator = new Random();
+        private readonly Random generator = new Random();
 
         public void doDamage()
         {
-            int damage = generator.Next(10) + 1;
-            Console.WriteLine("Infantry does " + damage.ToString() + " damage.");
+            var damage = generator.Next(10) + 1;
+            Console.WriteLine("Infantry does " + damage + " damage.");
         }
 
-        public void interactWith(string Name)
+        public void interactWith(string name)
         {
-            Console.WriteLine("Infantry attacks " + Name + ".");
+            Console.WriteLine("Infantry attacks " + name + ".");
         }
 
         public void moveForward()
         {
-            int movement = generator.Next(10) + 1;
-            Console.WriteLine("Infantry moves " + movement.ToString() + " spaces.");
+            var movement = generator.Next(10) + 1;
+            Console.WriteLine("Infantry moves " + movement + " spaces.");
         }
     }
 }

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace AdapterPattern
 {
@@ -21,7 +17,7 @@ namespace AdapterPattern
 
             Console.WriteLine("R2D2 without an adapter");
             r2d2.HitOpponent();
-            r2d2.walkForward();
+            r2d2.WalkForward();
             r2d2.ReactToHuman("Ryan");
 
             Console.WriteLine();

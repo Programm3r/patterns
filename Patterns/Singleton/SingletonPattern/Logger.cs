@@ -5,13 +5,11 @@ namespace SingletonPattern
 {
     public class Logger : ILogger
     {
-        private static Logger _logger;
+        private static readonly Lazy<Logger> Lazy = new Lazy<Logger>(() => new Logger());
 
-        private Logger()
-        {
-        }
+        public static Logger Instance => Lazy.Value;
 
-        public static ILogger Instance => _logger ?? (_logger = new Logger());
+        private Logger() { }
 
         public void LogDebug(string message)
         {
