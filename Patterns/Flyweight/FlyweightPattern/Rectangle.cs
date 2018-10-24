@@ -6,7 +6,7 @@
 
         public Rectangle()
         {
-            ShapeType = ShapeType.Recatngle;
+            ShapeType = ShapeType.Rectangle;
         }
 
         public ShapeType ShapeType { get; }

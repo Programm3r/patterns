@@ -5,47 +5,50 @@ namespace FlyweightPattern.Test
     [TestFixture]
     public class When_retrieving_shape_from_shape_factory
     {
-        [SetUp]
-        public void SetUp()
-        {
-            _shapeFactory = new ShapeFactory();
-        }
-
-        private ShapeFactory _shapeFactory;
-
         [TestCase(ShapeType.Triangle)]
         [TestCase(ShapeType.Circle)]
-        [TestCase(ShapeType.Recatngle)]
+        [TestCase(ShapeType.Rectangle)]
         public void It_should_retrieve_the_same_object_for_one_shape_type(ShapeType shapeType)
         {
-            var firstShape = _shapeFactory.RetrieveShape(shapeType);
-            var secondShape = _shapeFactory.RetrieveShape(shapeType);
+            // arrange
+            var shapeFactory = new ShapeFactory();
 
-            Assert.AreSame(firstShape, secondShape);
+            // act
+            var firstShape = shapeFactory.RetrieveShape(shapeType);
+            var secondShape = shapeFactory.RetrieveShape(shapeType);
+
+            // assert
+            Assert.That(firstShape, Is.EqualTo(secondShape));
+            Assert.That(shapeFactory.TotalShapesCreated, Is.EqualTo(1));
         }
 
         [TestCase]
         public void It_should_create_only_one_object_per_shape()
         {
-            var firstCircle = _shapeFactory.RetrieveShape(ShapeType.Circle);
-            var secondCircle = _shapeFactory.RetrieveShape(ShapeType.Circle);
-            var thirdCircle = _shapeFactory.RetrieveShape(ShapeType.Circle);
+            // arrange
+            var shapeFactory = new ShapeFactory();
 
-            var firstTriangle = _shapeFactory.RetrieveShape(ShapeType.Triangle);
-            var secondTriangle = _shapeFactory.RetrieveShape(ShapeType.Triangle);
-            var thirdTriangle = _shapeFactory.RetrieveShape(ShapeType.Triangle);
+            // act
+            var firstCircle = shapeFactory.RetrieveShape(ShapeType.Circle);
+            var secondCircle = shapeFactory.RetrieveShape(ShapeType.Circle);
+            var thirdCircle = shapeFactory.RetrieveShape(ShapeType.Circle);
 
-            var firstRecatngle = _shapeFactory.RetrieveShape(ShapeType.Recatngle);
-            var secondRecatngle = _shapeFactory.RetrieveShape(ShapeType.Recatngle);
-            var thirdRecatngle = _shapeFactory.RetrieveShape(ShapeType.Recatngle);
+            var firstTriangle = shapeFactory.RetrieveShape(ShapeType.Triangle);
+            var secondTriangle = shapeFactory.RetrieveShape(ShapeType.Triangle);
+            var thirdTriangle = shapeFactory.RetrieveShape(ShapeType.Triangle);
 
-            Assert.AreEqual(3, _shapeFactory.TotalShapesCreated);
+            var firstRecatngle = shapeFactory.RetrieveShape(ShapeType.Rectangle);
+            var secondRecatngle = shapeFactory.RetrieveShape(ShapeType.Rectangle);
+            var thirdRecatngle = shapeFactory.RetrieveShape(ShapeType.Rectangle);
+
+            // assert
+            Assert.That(shapeFactory.TotalShapesCreated, Is.EqualTo(3));
         }
 
         [TestCase]
         public void It_should_throw_exception_for_invalid_shape()
         {
-            Assert.Catch<UnrecognizedShapeException>(() => { _shapeFactory.RetrieveShape((ShapeType) 20); });
+            Assert.That(() => new ShapeFactory().RetrieveShape((ShapeType) 20), Throws.InstanceOf<UnrecognizedShapeException>());
         }
     }
 }

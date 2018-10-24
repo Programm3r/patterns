@@ -4,6 +4,6 @@
     {
         Circle,
         Triangle,
-        Recatngle
+        Rectangle
     }
 }
