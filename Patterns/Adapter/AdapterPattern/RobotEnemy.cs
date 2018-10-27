@@ -4,7 +4,6 @@ namespace AdapterPattern
 {
     public class RobotEnemy
     {
-
         private readonly Random _generator = new Random();
 
         public void HitOpponent()
@@ -25,6 +24,5 @@ namespace AdapterPattern
         {
             Console.WriteLine("Robot Enemy Tromples " + name);
         }
-
     }
 }
