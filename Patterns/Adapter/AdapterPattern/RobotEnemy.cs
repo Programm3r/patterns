@@ -6,21 +6,21 @@ namespace AdapterPattern
     {
         private readonly Random _generator = new Random();
 
-        public void HitOpponent()
+        public virtual void HitOpponent()
         {
             var damage = _generator.Next(10) + 1;
 
             Console.WriteLine("Enemy robot causes " + damage + " to opponent.");
         }
 
-        public void WalkForward()
+        public virtual void WalkForward()
         {
             var walk = _generator.Next(10) + 1;
 
             Console.WriteLine("Enemy robot walks " + walk + " spaces.");
         }
 
-        public void ReactToHuman(string name)
+        public virtual void ReactToHuman(string name)
         {
             Console.WriteLine("Robot Enemy Tromples " + name);
         }
