@@ -2,15 +2,13 @@
 
 namespace AdapterPattern
 {
-    class Program
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-
-            InfantryEnemy soldier = new InfantryEnemy();
-            RobotEnemy r2d2 = new RobotEnemy();
-            EnemyRobotAdapter adaptedRobot = new EnemyRobotAdapter(r2d2);
-
+            var soldier = new InfantryEnemy();
+            var r2d2 = new RobotEnemy();
+            var adaptedRobot = new EnemyRobotAdapter(r2d2);
 
             Console.WriteLine("The game is afoot!");
             Console.WriteLine();
@@ -22,15 +20,15 @@ namespace AdapterPattern
 
             Console.WriteLine();
             Console.WriteLine("Infantry Enemy");
-            soldier.doDamage();
-            soldier.moveForward();
-            soldier.interactWith("Ryan");
+            soldier.DoDamage();
+            soldier.MoveForward();
+            soldier.InteractWith("Ryan");
 
             Console.WriteLine();
             Console.WriteLine("Robot Enemy with adapter");
-            adaptedRobot.doDamage();
-            adaptedRobot.moveForward();
-            adaptedRobot.interactWith("Ryan");
+            adaptedRobot.DoDamage();
+            adaptedRobot.MoveForward();
+            adaptedRobot.InteractWith("Ryan");
 
             Console.ReadLine();
         }
