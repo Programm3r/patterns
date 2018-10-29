@@ -35,12 +35,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "Singlet
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern.Test", "Singleton\SingletonPattern.Test\SingletonPattern.Test.csproj", "{311742ED-21E0-44CD-A44B-85DE2B54A299}"
 EndProject
-
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Generic", "Generic", "{7EB1500E-5653-4874-8894-E026FBC2DE52}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericPattern", "Generic\GenericPattern\GenericPattern.csproj", "{47C57BA9-6E34-4337-9D0A-E14674B07B12}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericPattern.Test", "Generic\GenericPattern.Test\GenericPattern.Test.csproj", "{BD8E9BA0-B475-477B-9F4B-E31BC53803C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericPattern.Test", "Generic\GenericPattern.Test\GenericPattern.Test.csproj", "{BD8E9BA0-B475-477B-9F4B-E31BC53803C9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "State", "State", "{AA4FACE3-DD8C-49BA-8173-A1A5BB9DB6E9}"
 EndProject
@@ -49,7 +48,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern", "Adapter\AdapterPattern\AdapterPattern.csproj", "{8630B8A8-FD1B-4306-8E12-10E4801A2175}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdapterPattern.Test", "Adapter\AdapterPattern.Test\AdapterPattern.Test.csproj", "{00B6026F-F271-4FF0-A693-8AC8BACA4721}"
-
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePattern.Test", "State\StatePattern.Test\StatePattern.Test.csproj", "{44A2E1E4-509A-4895-B349-13D9EA9144D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +117,10 @@ Global
 		{00B6026F-F271-4FF0-A693-8AC8BACA4721}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{00B6026F-F271-4FF0-A693-8AC8BACA4721}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{00B6026F-F271-4FF0-A693-8AC8BACA4721}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44A2E1E4-509A-4895-B349-13D9EA9144D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44A2E1E4-509A-4895-B349-13D9EA9144D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44A2E1E4-509A-4895-B349-13D9EA9144D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44A2E1E4-509A-4895-B349-13D9EA9144D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -137,6 +141,7 @@ Global
 		{F919FB74-D5AF-4592-BAB7-F42311DE4B4F} = {AA4FACE3-DD8C-49BA-8173-A1A5BB9DB6E9}
 		{8630B8A8-FD1B-4306-8E12-10E4801A2175} = {033BEDD3-A18D-4D5A-9E8A-439AE6BFB441}
 		{00B6026F-F271-4FF0-A693-8AC8BACA4721} = {033BEDD3-A18D-4D5A-9E8A-439AE6BFB441}
+		{44A2E1E4-509A-4895-B349-13D9EA9144D5} = {AA4FACE3-DD8C-49BA-8173-A1A5BB9DB6E9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9386D0B-A87A-421A-A91A-882F09BD046C}
