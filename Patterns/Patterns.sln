@@ -81,11 +81,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoPattern", "Memento\M
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoPattern.Test", "Memento\MementoPattern.Test\MementoPattern.Test.csproj", "{AE47AE6B-AE2E-4484-90DA-6544BA947379}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", "Decorator", "{8E6DBB16-22E4-4751-855E-4D0258DDA424}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", Decorator", "{8E6DBB16-22E4-4751-855E-4D0258DDA424}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "DecoratorPattern\DecoratorPattern.csproj", "{72A16F62-9740-4C0B-BEAB-C69B46E991CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "Decorator\DecoratorPattern\DecoratorPattern.csproj", "{72A16F62-9740-4C0B-BEAB-C69B46E991CC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern.Tests", "DecoratorTests\DecoratorPattern.Tests.csproj", "{591A8563-C8AE-43A6-81B9-D95A246727EB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern.Tests", "Decorator\DecoratorTests\DecoratorPattern.Tests.csproj", "{591A8563-C8AE-43A6-81B9-D95A246727EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
