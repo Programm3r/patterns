@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.16
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryPattern", "Factory\FactoryPattern\FactoryPattern.csproj", "{9F2C67E0-96E1-4EA4-A87E-9AA91541F73A}"
 EndProject
@@ -65,21 +65,27 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryPattern.Test
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ChainOfResponsibility", "ChainOfResponsibility", "{B36C04FE-F377-40E4-AFE6-025F389D4110}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityPattern", "ChainOfResponsibility\ChainOfResponsibilityPattern\ChainOfResponsibilityPattern.csproj", "{AA03F8F3-3D4A-4DF5-873C-33B1073E3F76}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityPattern", "ChainOfResponsibility\ChainOfResponsibilityPattern\ChainOfResponsibilityPattern.csproj", "{AA03F8F3-3D4A-4DF5-873C-33B1073E3F76}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfResponsibilityPattern.Test", "ChainOfResponsibility\ChainOfResponsibilityPattern.Test\ChainOfResponsibilityPattern.Test.csproj", "{BDE7AE6A-62A3-405C-BFDD-36F31F61D940}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfResponsibilityPattern.Test", "ChainOfResponsibility\ChainOfResponsibilityPattern.Test\ChainOfResponsibilityPattern.Test.csproj", "{BDE7AE6A-62A3-405C-BFDD-36F31F61D940}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command", "Command", "{BD577587-70D2-42F1-BDA0-8962B630C73E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern", "Command\CommandPattern\CommandPattern.csproj", "{6887A387-FC0D-4312-81D5-DFEF59300211}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern", "Command\CommandPattern\CommandPattern.csproj", "{6887A387-FC0D-4312-81D5-DFEF59300211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandPattern.Test", "Command\CommandPattern.Test\CommandPattern.Test.csproj", "{222A1F98-9A5C-4811-BCD8-E904ABEC8A82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommandPattern.Test", "Command\CommandPattern.Test\CommandPattern.Test.csproj", "{222A1F98-9A5C-4811-BCD8-E904ABEC8A82}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Memento", "Memento", "{0018F21F-D462-4C99-B85E-7510E94AC8FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoPattern", "Memento\MementoPattern\MementoPattern.csproj", "{649C4472-838B-482F-97B4-9C36961D298E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoPattern", "Memento\MementoPattern\MementoPattern.csproj", "{649C4472-838B-482F-97B4-9C36961D298E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MementoPattern.Test", "Memento\MementoPattern.Test\MementoPattern.Test.csproj", "{AE47AE6B-AE2E-4484-90DA-6544BA947379}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MementoPattern.Test", "Memento\MementoPattern.Test\MementoPattern.Test.csproj", "{AE47AE6B-AE2E-4484-90DA-6544BA947379}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Decorator", Decorator", "{8E6DBB16-22E4-4751-855E-4D0258DDA424}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern", "Decorator\DecoratorPattern\DecoratorPattern.csproj", "{72A16F62-9740-4C0B-BEAB-C69B46E991CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DecoratorPattern.Tests", "Decorator\DecoratorTests\DecoratorPattern.Tests.csproj", "{591A8563-C8AE-43A6-81B9-D95A246727EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -191,6 +197,14 @@ Global
 		{AE47AE6B-AE2E-4484-90DA-6544BA947379}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE47AE6B-AE2E-4484-90DA-6544BA947379}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE47AE6B-AE2E-4484-90DA-6544BA947379}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72A16F62-9740-4C0B-BEAB-C69B46E991CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72A16F62-9740-4C0B-BEAB-C69B46E991CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72A16F62-9740-4C0B-BEAB-C69B46E991CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72A16F62-9740-4C0B-BEAB-C69B46E991CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{591A8563-C8AE-43A6-81B9-D95A246727EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{591A8563-C8AE-43A6-81B9-D95A246727EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{591A8563-C8AE-43A6-81B9-D95A246727EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{591A8563-C8AE-43A6-81B9-D95A246727EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -222,6 +236,8 @@ Global
 		{222A1F98-9A5C-4811-BCD8-E904ABEC8A82} = {BD577587-70D2-42F1-BDA0-8962B630C73E}
 		{649C4472-838B-482F-97B4-9C36961D298E} = {0018F21F-D462-4C99-B85E-7510E94AC8FB}
 		{AE47AE6B-AE2E-4484-90DA-6544BA947379} = {0018F21F-D462-4C99-B85E-7510E94AC8FB}
+		{72A16F62-9740-4C0B-BEAB-C69B46E991CC} = {8E6DBB16-22E4-4751-855E-4D0258DDA424}
+		{591A8563-C8AE-43A6-81B9-D95A246727EB} = {8E6DBB16-22E4-4751-855E-4D0258DDA424}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D9386D0B-A87A-421A-A91A-882F09BD046C}
