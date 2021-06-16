@@ -101,9 +101,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern.Tests", "Bui
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Facade", "Facade", "{E3010750-A7B7-44DE-8264-7558B3CF2E4D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "..\Facade\Facade\Facade.csproj", "{C64EE00F-C9C1-4432-967D-61FAF7B63B0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade", "Facade\Facade\Facade.csproj", "{C64EE00F-C9C1-4432-967D-61FAF7B63B0E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade.Tests", "..\Facade\Facade.Tests\Facade.Tests.csproj", "{1E89918B-983A-466E-A2D0-B2C56876A9EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Facade.Tests", "Facade\Facade.Tests\Facade.Tests.csproj", "{1E89918B-983A-466E-A2D0-B2C56876A9EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
